@@ -19,7 +19,7 @@ var name = 'Tyler';
 
 
   //Code Here
-function getName(name){
+function getName(){
  var person = prompt('Matt');{
    return person
  }
@@ -32,8 +32,9 @@ function getName(name){
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
-
+  function welcome(){
+    alert("Welcome, "+ getName);
+  }
 //////////////////PROBLEM 4////////////////////
 
 
@@ -42,7 +43,7 @@ function getName(name){
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+//Function parameters are the names listed in the function definition. Function arguments are the real values passed to and received by the function.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -52,7 +53,7 @@ function getName(name){
 
 
   //Answer Here
-
+//False, NaN, Empty String, Null, 0, undefined
 
 
 //////////////////PROBLEM 6////////////////////
@@ -80,7 +81,14 @@ function getName(name){
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+var name="Matt";
+function outerFn(){
+  return function(){
+    return name;
+  }
+}
+var innerFn = outerFn();
+innerFn;
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
