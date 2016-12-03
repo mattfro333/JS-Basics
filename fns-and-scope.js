@@ -20,9 +20,9 @@ var name = 'Tyler';
 
   //Code Here
 function getName(){
- var person = prompt('Matt');{
+ var person = prompt('Matt');
    return person
- }
+
 }
 //////////////////PROBLEM 3////////////////////
 
@@ -33,7 +33,7 @@ function getName(){
 
   //Code Here
   function welcome(){
-    alert("Welcome, "+ getName);
+    alert("Welcome, "+ getName());
   }
 //////////////////PROBLEM 4////////////////////
 
@@ -63,15 +63,18 @@ function getName(){
 //Create a function called myName that returns your name
 
   //Code Here
-
-
+function myName(){
+  var name=("Matt");{
+  return name
+}
+}
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+var newMyName = myName;
 //Now alert the result of invoking newMyName
-
+alert(newMyName())
 
 
 //////////////////PROBLEM 7////////////////////
